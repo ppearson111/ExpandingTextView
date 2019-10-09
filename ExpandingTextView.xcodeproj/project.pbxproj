@@ -13,6 +13,8 @@
 		2057DBE7234B790E00C1467E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2057DBE6234B790E00C1467E /* Assets.xcassets */; };
 		2057DBEA234B790E00C1467E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2057DBE8234B790E00C1467E /* LaunchScreen.storyboard */; };
 		2057DBF2234B7C7700C1467E /* ExpandingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057DBF1234B7C7700C1467E /* ExpandingTableViewCell.swift */; };
+		209E644D234CE77B007C0E45 /* ExpandingTableViewFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E644B234CE77B007C0E45 /* ExpandingTableViewFooterCell.swift */; };
+		209E644E234CE77B007C0E45 /* ExpandingTableViewFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209E644C234CE77B007C0E45 /* ExpandingTableViewFooterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2057DBE9234B790E00C1467E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2057DBEB234B790E00C1467E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2057DBF1234B7C7700C1467E /* ExpandingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingTableViewCell.swift; sourceTree = "<group>"; };
+		209E644B234CE77B007C0E45 /* ExpandingTableViewFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingTableViewFooterCell.swift; sourceTree = "<group>"; };
+		209E644C234CE77B007C0E45 /* ExpandingTableViewFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingTableViewFooterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2057DBE1234B790D00C1467E /* ViewController.swift */,
 				2057DBE3234B790D00C1467E /* Main.storyboard */,
 				2057DBF1234B7C7700C1467E /* ExpandingTableViewCell.swift */,
+				209E644B234CE77B007C0E45 /* ExpandingTableViewFooterCell.swift */,
+				209E644C234CE77B007C0E45 /* ExpandingTableViewFooterCell.xib */,
 				2057DBE6234B790E00C1467E /* Assets.xcassets */,
 				2057DBE8234B790E00C1467E /* LaunchScreen.storyboard */,
 				2057DBEB234B790E00C1467E /* Info.plist */,
@@ -127,6 +133,7 @@
 			files = (
 				2057DBEA234B790E00C1467E /* LaunchScreen.storyboard in Resources */,
 				2057DBE7234B790E00C1467E /* Assets.xcassets in Resources */,
+				209E644E234CE77B007C0E45 /* ExpandingTableViewFooterCell.xib in Resources */,
 				2057DBE5234B790D00C1467E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2057DBE2234B790D00C1467E /* ViewController.swift in Sources */,
+				209E644D234CE77B007C0E45 /* ExpandingTableViewFooterCell.swift in Sources */,
 				2057DBE0234B790D00C1467E /* AppDelegate.swift in Sources */,
 				2057DBF2234B7C7700C1467E /* ExpandingTableViewCell.swift in Sources */,
 			);

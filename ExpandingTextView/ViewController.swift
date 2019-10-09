@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol ExpandingCellDelegate {
-    func updateCellHeight (indexPath: IndexPath, comment:String)
+    func updateCellHeight()
 }
 
 
@@ -24,9 +24,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.estimatedRowHeight = 55
         tableView.rowHeight = UITableView.automaticDimension
-
+        tableView.sectionHeaderHeight = UITableView.automaticDimension
+        tableView.estimatedSectionFooterHeight = 55
+        tableView.estimatedSectionHeaderHeight = 55
+        tableView.sectionFooterHeight = UITableView.automaticDimension
+        
+        tableView.register(ExpandingTableViewFooterCell.nib, forHeaderFooterViewReuseIdentifier: ExpandingTableViewFooterCell.identifier)
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -45,11 +54,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }
     }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: ExpandingTableViewFooterCell.identifier) as? ExpandingTableViewFooterCell else { return nil }
+        cell.delegate = self
+        return cell
+    }
     
 }
 
 extension ViewController: ExpandingCellDelegate {
-    func updateCellHeight(indexPath: IndexPath, comment: String) {
+    func updateCellHeight() {
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
     }

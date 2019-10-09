@@ -29,7 +29,7 @@ class ExpandingTableViewCell: UITableViewCell {
 extension ExpandingTableViewCell: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         if let delegate = self.delegate {
-            delegate.updateCellHeight(indexPath: self.cellIndexPath, comment: textView.text)
+            delegate.updateCellHeight()
         }
     }
 }
